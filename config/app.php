@@ -176,10 +176,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
         Yajra\DataTables\DataTablesServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Spatie\Backup\BackupServiceProvider::class,
+=======
+
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
     ],
 
     /*
@@ -195,8 +199,11 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // ...
+<<<<<<< HEAD
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
     ])->toArray(),
 
 ];

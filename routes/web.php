@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
 Route::post('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
@@ -26,4 +27,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('permissions',\App\Http\Controllers\PermissionController::class);
     Route::get('activities', [App\Http\Controllers\ActivityLogController::class,'index'])->name('activities.index');
 
+=======
+Route::get('/', function () {
+    return view('welcome');
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
 });

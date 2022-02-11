@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "747f98b89a7caaaa7cd725e869c8c389",
     "packages": [
         {
@@ -50,6 +51,11 @@
             "time": "2022-02-07T20:33:09+00:00"
         },
         {
+=======
+    "content-hash": "65e85f9f959c0b087110331754d451cf",
+    "packages": [
+        {
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "asm89/stack-cors",
             "version": "v2.1.1",
             "source": {
@@ -106,6 +112,7 @@
             "time": "2022-01-18T09:12:03+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "barryvdh/laravel-dompdf",
             "version": "v1.0.0",
             "source": {
@@ -182,6 +189,8 @@
             "time": "2022-01-29T08:02:59+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "brick/math",
             "version": "0.9.3",
             "source": {
@@ -484,6 +493,7 @@
             "time": "2022-01-12T08:27:12+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "dompdf/dompdf",
             "version": "v1.2.0",
             "source": {
@@ -551,6 +561,8 @@
             "time": "2022-02-07T13:02:10+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "dragonmantank/cron-expression",
             "version": "v3.3.1",
             "source": {
@@ -1146,6 +1158,7 @@
             "time": "2021-10-06T17:43:30+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "jeroennoten/laravel-adminlte",
             "version": "v3.8.0",
             "source": {
@@ -1205,6 +1218,8 @@
             "time": "2022-02-10T17:50:18+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "laravel/framework",
             "version": "v9.0.2",
             "source": {
@@ -1575,6 +1590,7 @@
             "time": "2022-01-10T08:52:49+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/ui",
             "version": "v3.4.3",
             "source": {
@@ -1636,6 +1652,8 @@
             "time": "2022-02-08T14:19:32+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "league/commonmark",
             "version": "2.2.1",
             "source": {
@@ -1823,6 +1841,7 @@
         },
         {
             "name": "league/flysystem",
+<<<<<<< HEAD
             "version": "3.0.4",
             "source": {
                 "type": "git",
@@ -1833,6 +1852,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/aef771741948595bfbed8e0342dd340695a368ff",
                 "reference": "aef771741948595bfbed8e0342dd340695a368ff",
+=======
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "9f8b4260031bfef5497477da53dd57b2aaff0e06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9f8b4260031bfef5497477da53dd57b2aaff0e06",
+                "reference": "9f8b4260031bfef5497477da53dd57b2aaff0e06",
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
                 "shasum": ""
             },
             "require": {
@@ -1892,7 +1923,11 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/thephpleague/flysystem/tree/3.0.4"
+=======
+                "source": "https://github.com/thephpleague/flysystem/tree/3.0.3"
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             },
             "funding": [
                 {
@@ -1908,7 +1943,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2022-02-10T16:14:03+00:00"
+=======
+            "time": "2022-01-31T19:41:04+00:00"
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
         },
         {
             "name": "league/mime-type-detection",
@@ -1967,6 +2006,7 @@
             "time": "2021-11-21T11:48:40+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "livewire/livewire",
             "version": "v2.10.1",
             "source": {
@@ -2040,6 +2080,8 @@
             "time": "2022-01-21T13:39:10+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "monolog/monolog",
             "version": "2.3.5",
             "source": {
@@ -2438,6 +2480,7 @@
             "time": "2021-11-30T19:35:32+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "nwidart/laravel-modules",
             "version": "v9.0.0",
             "source": {
@@ -2609,6 +2652,8 @@
             "time": "2021-12-17T14:08:35+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "phpoption/phpoption",
             "version": "1.8.1",
             "source": {
@@ -3340,6 +3385,7 @@
             "time": "2021-09-25T23:10:38+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "rap2hpoutre/laravel-log-viewer",
             "version": "v2.1.0",
             "source": {
@@ -4071,6 +4117,8 @@
             "time": "2021-03-30T19:46:13+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "symfony/console",
             "version": "v6.0.3",
             "source": {
@@ -6423,6 +6471,7 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
             "time": "2021-03-09T10:59:23+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "yajra/laravel-datatables-oracle",
@@ -6508,10 +6557,13 @@
                 }
             ],
             "time": "2022-01-18T01:13:47+00:00"
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
         }
     ],
     "packages-dev": [
         {
+<<<<<<< HEAD
             "name": "barryvdh/laravel-debugbar",
             "version": "v3.6.7",
             "source": {
@@ -6597,6 +6649,8 @@
             "time": "2022-02-09T07:52:32+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "doctrine/instantiator",
             "version": "1.4.0",
             "source": {
@@ -6968,6 +7022,7 @@
             "time": "2022-02-08T14:14:12+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "maximebf/debugbar",
             "version": "dev-master",
             "source": {
@@ -7035,6 +7090,8 @@
             "time": "2021-12-27T18:49:48+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "mockery/mockery",
             "version": "1.5.0",
             "source": {
@@ -7123,6 +7180,12 @@
             "require": {
                 "php": "^7.1 || ^8.0"
             },
+<<<<<<< HEAD
+=======
+            "replace": {
+                "myclabs/deep-copy": "self.version"
+            },
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "require-dev": {
                 "doctrine/collections": "^1.0",
                 "doctrine/common": "^2.6",
@@ -9256,6 +9319,7 @@
             "time": "2022-02-10T08:50:40+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "symfony/debug",
             "version": "v4.4.37",
             "source": {
@@ -9324,6 +9388,8 @@
             "time": "2022-01-02T09:41:36+00:00"
         },
         {
+=======
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
             "name": "theseer/tokenizer",
             "version": "1.2.1",
             "source": {
@@ -9383,5 +9449,9 @@
         "php": "^8.0"
     },
     "platform-dev": [],
+<<<<<<< HEAD
     "plugin-api-version": "2.2.0"
+=======
+    "plugin-api-version": "2.1.0"
+>>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
 }
