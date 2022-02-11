@@ -1,0 +1,13 @@
+{
+    "name": "Machine",
+    "alias": "machine",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
