@@ -21,7 +21,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
-            <x-adminlte-button href="{{route('admins.create')}}" label="เพิ่มผู้ใช้" theme="info" icon="fas fa-plus"/>
+{{--            <x-adminlte-button href="{{route('admins.create')}}" label="เพิ่มผู้ใช้" theme="info" icon="fas fa-plus"/>--}}
             <a class="btn btn-lg btn-info mb-2" href="{{route('admins.create')}}"><i class="fas fa-plus"></i> เพิ่มผู้ใช้</a>
             <div class="card">
                 <div class="card-body">

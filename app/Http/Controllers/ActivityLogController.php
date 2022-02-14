@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Admin;
 use Carbon\Carbon;
 use Spatie\Activitylog\Models\Activity;
 use Illuminate\Http\Request;
@@ -22,7 +21,7 @@ class ActivityLogController extends Controller
                 })
                 ->addColumn('description_format', function (Activity $act) {
                     if ($act->description=='created'){
-                        return '<span class="badge badge-success">เพิมข้อมูล</span>';
+                        return '<span class="badge badge-success">เพิ่มข้อมูล</span>';
                     }elseif($act->description=='updated'){
                         return '<span class="badge badge-warning">อัพเดตข้อมูล</span>';
                     }elseif($act->description=='deleted'){

@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
 Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
 Route::post('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
@@ -22,13 +21,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('admins', App\Http\Controllers\AdminController::class);
-    Route::resource('profiles',\App\Http\Controllers\ProfileController::class);
-    Route::resource('roles',\App\Http\Controllers\RoleController::class);
-    Route::resource('permissions',\App\Http\Controllers\PermissionController::class);
-    Route::get('activities', [App\Http\Controllers\ActivityLogController::class,'index'])->name('activities.index');
+    Route::resource('profiles', \App\Http\Controllers\ProfileController::class);
+    Route::resource('roles', \App\Http\Controllers\RoleController::class);
+    Route::resource('permissions', \App\Http\Controllers\PermissionController::class);
+    Route::get('activities', [App\Http\Controllers\ActivityLogController::class, 'index'])->name('activities.index');
 
-=======
-Route::get('/', function () {
-    return view('welcome');
->>>>>>> c1eb2b18879cec9baeddaf79fa43f0f999ed9a2a
+    Route::get('/', function () {
+        return view('welcome');
+    });
 });
