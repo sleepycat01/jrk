@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'layout_topnav' => null,
+    'layout_topnav' => true,
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
     'layout_fixed_navbar' => null,
@@ -233,7 +233,7 @@ return [
             'topnav_user' => true,
         ],
         [
-            'type'         => 'fullscreen-widget',
+            'type' => 'fullscreen-widget',
             'topnav_right' => true,
         ],
 
@@ -242,35 +242,136 @@ return [
 
         ['header' => 'account_settings'],
         [
-            'text' => 'จัดการผู้ดูแลระบบ',
+            'text' => 'ตั้งค่าทั่วไป',
+            'url' => '#',
+            'icon' => 'fas fa-fw fa-users mr-2',
+            'submenu' => [
+                [
+                    'text' => 'จัดการพนักงาน',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+//            'can' => 'manage admin',
+                ],//จัดการผู้ใช้
+                [
+                    'text' => 'จัดการเครื่องจักร',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],//จัดการผู้ใช้
+                [
+                    'text' => 'จัดการแม่พิมพ์',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],//จัดการผู้ใช้
+                [
+                    'text' => 'จัดการสินค้าเสีย',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],//จัดการผู้ใช้
+                [
+                    'text' => 'จัดการ สินค้าคงคลังของ อุปกรณ์',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],//จัดการผู้ใช้
+            ]
+        ],//จัดการผู้ใช้
+        [
+            'text' => 'รายงาน',
             'route' => 'admins.index',
             'icon' => 'fas fa-fw fa-users mr-2',
             'active' => ['*admins*'],
-//            'can' => 'manage admin',
+            'submenu' => [
+                [
+                    'text' => 'รายงานการผลิตประจำเครื่องแผนกอัดแบบ',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],//จัดการผู้ใช้
+            ],
         ],//จัดการผู้ใช้
         [
-            'text' => 'จัดการบทบาทการใช้งาน',
-            'icon_color' => 'warning',
-            'route' => 'roles.index',
-            'active' => ['*roles*'],
-            'icon' => 'fas fa-fw fa-user-lock mr-2',
-//            'can' => 'manage role',
-        ],//จัดการบทบาทการใช้งาน
+            'text' => 'จัดการวัตถุดิบ',
+            'route' => 'admins.index',
+            'icon' => 'fas fa-fw fa-clipboard-check mr-2',
+            'active' => ['*admins*'],
+            'submenu' => [
+                [
+                    'text' => 'ระบบการนำเข้า / นำออก compound',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+            ],
+        ],
         [
-            'text' => 'จัดการสิทธิ์การใช้งาน',
-            'icon_color' => 'warning',
-            'route' => 'permissions.index',
-            'active' => ['*permissions*'],
-            'icon' => 'fas fa-fw fa-key mr-2',
-//            'can' => 'manage permission',
-        ],//จัดการสิทธิ์การใช้งาน
-
-        [
-            'text' => 'ประวัติการใช้งานระบบ',
-            'route' => 'activities.index',
-            'icon' => 'fas fa-user-tag mr-2',
-//            'can' => 'view activity',
-        ], //กิจกรรม activities
+            'text' => 'จัดการกระบวนการผลิต',
+            'route' => 'admins.index',
+            'icon' => 'fas fa-fw fa-wrench mr-2',
+            'active' => ['*admins*'],
+            'submenu' => [
+                [
+                    'text' => 'ระบบจัดการข้อมูลพื้นฐานคำสั่งการผลิต Rubber',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+                [
+                    'text' => 'ระบบจัดการข้อมูลการทำงานของเครื่องจักร ออก QR Label สำหรับแสกน',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+                [
+                    'text' => 'บันทึกการซ่อมบำรุงเครื่องจักร',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+                [
+                    'text' => 'บันทึกการซ่อมบำรุุงแม่พิมพ์',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+                [
+                    'text' => 'บันทึกการขัดแม่พิมพ์ด้วย dryice',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+                [
+                    'text' => 'บันทึกข้อมูลการตรวจสอบวัดอุณหภูมิ',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+                [
+                    'text' => 'บันทึกข้้อมูลการตรวจสอบเครื่องจักรประจำวัน',
+                    'route' => 'admins.index',
+                    'icon' => 'fas fa-fw fa-caret-right mr-2',
+                    'active' => ['*admins*'],
+                ],
+            ],
+        ],//จัดการผู้ใช้
+//        [
+//            'text' => 'จัดการสิทธิ์การใช้งาน',
+//            'icon_color' => 'warning',
+//            'route' => 'permissions.index',
+//            'active' => ['*permissions*'],
+//            'icon' => 'fas fa-fw fa-key mr-2',
+////            'can' => 'manage permission',
+//        ],//จัดการสิทธิ์การใช้งาน
+//
+//        [
+//            'text' => 'ประวัติการใช้งานระบบ',
+//            'route' => 'activities.index',
+//            'icon' => 'fas fa-user-tag mr-2',
+////            'can' => 'view activity',
+//        ], //กิจกรรม activities
     ],
 
     /*

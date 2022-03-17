@@ -19,6 +19,7 @@ Route::post('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout
 
 Route::middleware(['auth'])->group(function () {
     Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('admins', App\Http\Controllers\AdminController::class);
     Route::resource('profiles', \App\Http\Controllers\ProfileController::class);
@@ -26,7 +27,5 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('permissions', \App\Http\Controllers\PermissionController::class);
     Route::get('activities', [App\Http\Controllers\ActivityLogController::class, 'index'])->name('activities.index');
 
-    Route::get('/', function () {
-        return view('welcome');
-    });
+
 });
