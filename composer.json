@@ -16,7 +16,6 @@
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.4",
         "livewire/livewire": "^2.10",
-        "nwidart/laravel-modules": "^9.0",
         "rap2hpoutre/laravel-log-viewer": "^2.1",
         "realrashid/sweet-alert": "^5.0",
         "spatie/laravel-activitylog": "^4.4",
