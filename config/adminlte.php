@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'JRK Engineering',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -31,7 +31,7 @@ return [
     */
 
     'use_ico_only' => false,
-    'use_full_favicon' => false,
+    'use_full_favicon' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>JRK</b> Engineering',
+    'logo_img' => 'logo/logo.jpeg',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'AdminLTE',
+    'logo_img_alt' => 'JRK LOGO',
 
     /*
     |--------------------------------------------------------------------------
@@ -83,11 +83,11 @@ return [
     |
     */
 
-    'layout_topnav' => true,
+    'layout_topnav' => null,
     'layout_boxed' => null,
-    'layout_fixed_sidebar' => null,
-    'layout_fixed_navbar' => null,
-    'layout_fixed_footer' => null,
+    'layout_fixed_sidebar' => true,
+    'layout_fixed_navbar' => true,
+    'layout_fixed_footer' => true,
     'layout_dark_mode' => null,
 
     /*
@@ -120,6 +120,7 @@ return [
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Layout-and-Styling-Configuration
     |
     */
+
 
     'classes_body' => 'text-sm layout-fixed sidebar-mini',
     'classes_brand' => '',
@@ -249,111 +250,94 @@ return [
                 [
                     'text' => 'จัดการพนักงาน',
                     'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'icon' => 'fas fa-fw fa-circle mr-2',
 //            'can' => 'manage admin',
                 ],//จัดการผู้ใช้
                 [
                     'text' => 'จัดการเครื่องจักร',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'route' => 'machines.index',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],//จัดการผู้ใช้
                 [
                     'text' => 'จัดการแม่พิมพ์',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'route' => 'molds.index',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],//จัดการผู้ใช้
                 [
                     'text' => 'จัดการสินค้าเสีย',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'route' => 'ng.index',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],//จัดการผู้ใช้
                 [
                     'text' => 'จัดการ สินค้าคงคลังของ อุปกรณ์',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'route' => 'inventories.index',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],//จัดการผู้ใช้
             ]
         ],//จัดการผู้ใช้
         [
             'text' => 'รายงาน',
-            'route' => 'admins.index',
+            'url' => '#',
             'icon' => 'fas fa-fw fa-users mr-2',
-            'active' => ['*admins*'],
             'submenu' => [
                 [
                     'text' => 'รายงานการผลิตประจำเครื่องแผนกอัดแบบ',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],//จัดการผู้ใช้
             ],
         ],//จัดการผู้ใช้
         [
             'text' => 'จัดการวัตถุดิบ',
-            'route' => 'admins.index',
+            'url' => '#',
             'icon' => 'fas fa-fw fa-clipboard-check mr-2',
-            'active' => ['*admins*'],
             'submenu' => [
                 [
                     'text' => 'ระบบการนำเข้า / นำออก compound',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
             ],
         ],
         [
             'text' => 'จัดการกระบวนการผลิต',
-            'route' => 'admins.index',
+            'url' => '#',
             'icon' => 'fas fa-fw fa-wrench mr-2',
-            'active' => ['*admins*'],
             'submenu' => [
                 [
                     'text' => 'ระบบจัดการข้อมูลพื้นฐานคำสั่งการผลิต Rubber',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
                 [
                     'text' => 'ระบบจัดการข้อมูลการทำงานของเครื่องจักร ออก QR Label สำหรับแสกน',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
                 [
                     'text' => 'บันทึกการซ่อมบำรุงเครื่องจักร',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
                 [
                     'text' => 'บันทึกการซ่อมบำรุุงแม่พิมพ์',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
                 [
                     'text' => 'บันทึกการขัดแม่พิมพ์ด้วย dryice',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
                 [
                     'text' => 'บันทึกข้อมูลการตรวจสอบวัดอุณหภูมิ',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
                 [
                     'text' => 'บันทึกข้้อมูลการตรวจสอบเครื่องจักรประจำวัน',
-                    'route' => 'admins.index',
-                    'icon' => 'fas fa-fw fa-caret-right mr-2',
-                    'active' => ['*admins*'],
+                    'url' => '#',
+                    'icon' => 'fas fa-fw fa-circle mr-2',
                 ],
             ],
         ],//จัดการผู้ใช้

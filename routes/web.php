@@ -27,5 +27,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('permissions', \App\Http\Controllers\PermissionController::class);
     Route::get('activities', [App\Http\Controllers\ActivityLogController::class, 'index'])->name('activities.index');
 
-
+    Route::resource('machines', \App\Http\Controllers\MachineController::class);
+    Route::resource('molds', \App\Http\Controllers\MoldController::class);
+    Route::resource('ng', \App\Http\Controllers\NGController::class);
+    Route::resource('inventories', \App\Http\Controllers\InventoryController::class);
 });

@@ -1,19 +1,6 @@
 @extends('adminlte::master')
-@push('css')
-    <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
-        body {
-            font-family: 'Noto Sans Thai', sans-serif !important;
-        }
-    </style>
-@endpush
-@inject('layoutHelper', 'JeroenNoten\LaravelAdminLte\Helpers\LayoutHelper')
 
-@if($layoutHelper->isLayoutTopnavEnabled())
-    @php( $def_container_class = 'container' )
-@else
-    @php( $def_container_class = 'container-fluid' )
-@endif
+@inject('layoutHelper', 'JeroenNoten\LaravelAdminLte\Helpers\LayoutHelper')
 
 @section('adminlte_css')
     @stack('css')
@@ -40,25 +27,11 @@
         @endif
 
         {{-- Content Wrapper --}}
-        <div class="content-wrapper {{ config('adminlte.classes_content_wrapper') ?? '' }}">
-
-            {{-- Content Header --}}
-            @hasSection('content_header')
-                <div class="content-header">
-                    <div class="{{ config('adminlte.classes_content_header') ?: $def_container_class }}">
-                        @yield('content_header')
-                    </div>
-                </div>
-            @endif
-
-            {{-- Main Content --}}
-            <div class="content">
-                <div class="{{ config('adminlte.classes_content') ?: $def_container_class }}">
-                    @yield('content')
-                </div>
-            </div>
-
-        </div>
+        @empty($iFrameEnabled)
+            @include('adminlte::partials.cwrapper.cwrapper-default')
+        @else
+            @include('adminlte::partials.cwrapper.cwrapper-iframe')
+        @endempty
 
         {{-- Footer --}}
         @hasSection('footer')
@@ -77,5 +50,3 @@
     @stack('js')
     @yield('js')
 @stop
-
-
