@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create(' ', function (Blueprint $table) {
+        Schema::create('inventories', function (Blueprint $table) {
             $table->id();
             $table->string('title')->comment('ชื่อสินค้า');
             $table->string('code')->comment('รหัสสินค้า');
