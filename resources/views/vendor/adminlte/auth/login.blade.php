@@ -18,7 +18,7 @@
     @php( $password_reset_url = $password_reset_url ? url($password_reset_url) : '' )
 @endif
 
-@section('auth_header', __('adminlte::adminlte.login_message'))
+@section('auth_header', __('เข้าสู่ระบบ'))
 
 @section('auth_body')
     <form action="{{ $login_url }}" method="post">
@@ -26,8 +26,8 @@
 
         {{-- Email field --}}
         <div class="input-group mb-3">
-            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                   value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}" autofocus>
+            <input type="name" name="username" class="form-control @error('username') is-invalid @enderror"
+                   value="{{ old('username') }}" placeholder="{{ __('ชื่อผู้ใช้') }}" autofocus>
 
             <div class="input-group-append">
                 <div class="input-group-text">
@@ -35,8 +35,8 @@
                 </div>
             </div>
 
-            @error('email')
-                <span class="invalid-feedback" role="alert">
+            @error('username')
+            <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -45,7 +45,7 @@
         {{-- Password field --}}
         <div class="input-group mb-3">
             <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
-                   placeholder="{{ __('adminlte::adminlte.password') }}">
+                   placeholder="{{ __('รหัสผ่าน') }}">
 
             <div class="input-group-append">
                 <div class="input-group-text">
@@ -54,7 +54,7 @@
             </div>
 
             @error('password')
-                <span class="invalid-feedback" role="alert">
+            <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -62,22 +62,24 @@
 
         {{-- Login field --}}
         <div class="row">
-            <div class="col-7">
-                <div class="icheck-primary" title="{{ __('adminlte::adminlte.remember_me_hint') }}">
-                    <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+            {{--            <div class="col-7">--}}
+            {{--                <div class="icheck-primary" title="{{ __('adminlte::adminlte.remember_me_hint') }}">--}}
+            {{--                    <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>--}}
 
-                    <label for="remember">
-                        {{ __('adminlte::adminlte.remember_me') }}
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-5">
-                <button type=submit class="btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}">
+            {{--                    <label for="remember">--}}
+            {{--                        {{ __('adminlte::adminlte.remember_me') }}--}}
+            {{--                    </label>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            <div class="col-3"></div>
+            <div class="col-md-6">
+                <button type=submit
+                        class="btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}">
                     <span class="fas fa-sign-in-alt"></span>
-                    {{ __('adminlte::adminlte.sign_in') }}
+                    {{ __('เข้าสู่ระบบ') }}
                 </button>
             </div>
+            <div class="col-3"></div>
         </div>
 
     </form>

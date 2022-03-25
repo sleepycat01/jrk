@@ -62,9 +62,9 @@ class LoginController extends Controller
 
     protected function credentials(Request $request)
     {
-        $username = $request->input('email');
+        $username = $request->input('username');
         $password = $request->input('password');
-        return ['email' => $username, 'password' => $password, 'active' => User::USER_ACTIVE];
+        return ['username' => $username, 'password' => $password, 'active' => User::USER_ACTIVE];
     }
 
     protected function sendLoginResponse(Request $request)
@@ -85,6 +85,9 @@ class LoginController extends Controller
             : redirect()->intended($this->redirectPath());
     }
 
-
+    public function username()
+    {
+        return 'username';
+    }
 
 }
