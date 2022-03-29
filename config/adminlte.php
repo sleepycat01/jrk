@@ -273,6 +273,29 @@ return [
                     'route' => 'inventories.index',
                     'icon' => 'fas fa-fw fa-circle mr-2',
                 ],//จัดการผู้ใช้
+                [
+                    'text' => 'ประวัติการใช้งานระบบ',
+                    'icon_color' => 'warning',
+                    'route' => 'activities.index',
+                    'icon' => 'fas fa-user-tag mr-2',
+//                    'can' => 'view activity',
+                ], //กิจกรรม activities
+                [
+                    'text' => 'จัดการบทบาทการใช้งาน',
+                    'icon_color' => 'warning',
+                    'route' => 'roles.index',
+                    'active' => ['*roles*'],
+                    'icon' => 'fas fa-fw fa-user-lock mr-2',
+//                    'can' => 'manage role',
+                ],//จัดการบทบาทการใช้งาน
+                [
+                    'text' => 'จัดการสิทธิ์การใช้งาน',
+                    'icon_color' => 'warning',
+                    'route' => 'permissions.index',
+                    'active' => ['*permissions*'],
+                    'icon' => 'fas fa-fw fa-key mr-2',
+//                    'can' => 'manage permission',
+                ],//จัดการสิทธิ์การใช้งาน
             ]
         ],//จัดการผู้ใช้
         [
