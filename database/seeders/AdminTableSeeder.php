@@ -48,7 +48,7 @@ class AdminTableSeeder extends Seeder
                    'id' => 4,
                     'username' => 'nutdanai.c',
                     'name' => 'Admin Compat3',
-                    'email' => 'nutdanai.c@gmail.com',
+                    'email' => 'nuttdanai.chaleekrua@compattana.com',
                     'email_verified_at' => now(),
                     'password' => bcrypt('password'),
                     'remember_token' => Str::random(10),
