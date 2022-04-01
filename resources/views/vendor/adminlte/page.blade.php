@@ -4,6 +4,12 @@
 
 @section('adminlte_css')
     @stack('css')
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap');
+        body {
+            font-family: 'Sarabun', sans-serif !important;
+        }
+    </style>
     @yield('css')
 @stop
 
@@ -12,6 +18,7 @@
 @section('body_data', $layoutHelper->makeBodyData())
 
 @section('body')
+
     <div class="wrapper">
 
         {{-- Top Navbar --}}

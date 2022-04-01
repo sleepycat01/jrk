@@ -38,7 +38,7 @@ class AdminTableSeeder extends Seeder
                 [
                     'id' => 3,
                     'username' => 'g.porawet',
-                    'name' => 'Admin Compat2',
+                    'name' => 'Admin Compat3',
                     'email' => 'porawet.kunlaphruetmetha@compattana.com',
                     'email_verified_at' => now(),
                     'password' => bcrypt('password'),
@@ -47,12 +47,22 @@ class AdminTableSeeder extends Seeder
                 [
                    'id' => 4,
                     'username' => 'nutdanai.c',
-                    'name' => 'Admin Compat3',
+                    'name' => 'Admin Compat4',
                     'email' => 'nutdanai.c@gmail.com',
                     'email_verified_at' => now(),
                     'password' => bcrypt('password'),
                     'remember_token' => Str::random(10),
+                ],
+                [
+                    'id' => 5,
+                    'username' => 'p.purin',
+                    'name' => 'Admin Compat4',
+                    'email' => 'purin.pintakhiew@compattana.com',
+                    'email_verified_at' => now(),
+                    'password' => bcrypt('password'),
+                    'remember_token' => Str::random(10),
                 ]
+
             ]
         );
     }
