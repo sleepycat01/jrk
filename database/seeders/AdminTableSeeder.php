@@ -44,6 +44,15 @@ class AdminTableSeeder extends Seeder
                     'password' => bcrypt('password'),
                     'remember_token' => Str::random(10),
                 ],
+                [
+                   'id' => 4,
+                    'username' => 'nutdanai.c',
+                    'name' => 'Admin Compat3',
+                    'email' => 'nutdanai.c@gmail.com',
+                    'email_verified_at' => now(),
+                    'password' => bcrypt('password'),
+                    'remember_token' => Str::random(10),
+                ]
             ]
         );
     }

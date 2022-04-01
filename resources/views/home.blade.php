@@ -42,7 +42,7 @@
                     <div class="card-header">
                             <h3 class="card-title">Work Order ล่าสุด</h3>
                         <div class="card-tools">
-                            <a href="http://meeting_ba.io/compensates" class="btn btn-secondary btn-xs">ดูทั้งหมด</a>
+                            <a href="" class="btn btn-secondary btn-xs">ดูทั้งหมด</a>
                         </div>
                         <!-- /.card-tools -->
                     </div>
@@ -95,7 +95,7 @@
                     <div class="card-header">
                         <h3 class="card-title">รายการเบิก Compound ล่าสุด</h3>
                         <div class="card-tools">
-                            <a href="http://meeting_ba.io/compensates" class="btn btn-secondary btn-xs">ดูทั้งหมด</a>
+                            <a href="#" class="btn btn-secondary btn-xs">ดูทั้งหมด</a>
                         </div>
                         <!-- /.card-tools -->
                     </div>
